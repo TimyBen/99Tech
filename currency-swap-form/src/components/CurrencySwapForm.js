@@ -83,7 +83,7 @@ const CurrencySwapForm = () => {
     }
 
     return (
-        <div className='flex justify-center items-center pt-4 flex-col bg-stone-600'>
+        <div className='flex justify-center items-center pt-4 flex-col bg-stone-700'>
             {/* <div className='border border-e-indigo-800 w-92 h-92'>dsdd</div> */}
             <div className='flex justify-center uppercase ext-center p-4 w-full h-32 font-extrabold text-5xl'>
                 <h1 className='w-fit hh-full p-4 font-serif text-center text-white'> Currrency Swap Form </h1>
@@ -92,14 +92,14 @@ const CurrencySwapForm = () => {
                 <CurrencyDropdown currencies={uniqueCurrencies} selectedCurrency={fromCurrency} onChange={handleFromCurrencyChange} />
                 <InputField value={amount} onChange={handleAmountChange} />
                 <CurrencyDropdown currencies={uniqueCurrencies} selectedCurrency={toCurrency} onChange={handleToCurrencyChange} />
-                <button className="w-32 px-4 py-2  text-white bg-stone-700 text-2xl font-serif border rounded-md hover:bg-opacity-20  transition duration-200 ease-in-out" type="submit">
+                <button className="w-32 px-4 py-2  text-white bg-stone-600 text-2xl font-serif border rounded-md hover:bg-stone-500  transition duration-200 ease-in-out" type="submit">
                     Swap
                 </button>
             </form>
-            {errorMessage && <div className='font-serif py-4  font-bold text-2xl leading-12 text-gray-900'><p>{errorMessage}</p></div>}
+            {errorMessage && <div className='font-serif py-4  font-bold text-2xl leading-12 text-gray-200'><p>{errorMessage}</p></div>}
             {result && <div className='font-serif py-4  font-bold text-2xl leading-12 text-gray-200'><p>Exchange : {result}</p></div>}
 
-            <div className='pt-8 text-xl font-serif font-bold'>
+            <div className='pt-8 text-xl font-serif font-bold leading-12 text-gray-200'>
                 <h1>Available Currencies</h1>
             </div>
             <table className='border-collapse borde border-x-cyan-950 mt-4 w-[50%] text-gray-300'>
