@@ -96,9 +96,10 @@ const CurrencySwapForm = () => {
                     Swap
                 </button>
             </form>
-            {errorMessage && <div className='font-serif py-4  font-bold text-2xl leading-12 text-gray-200'><p>{errorMessage}</p></div>}
-            {result && <div className='font-serif py-4  font-bold text-2xl leading-12 text-gray-200'><p>Exchange : {result}</p></div>}
-
+            <div className='py-6'>
+                {errorMessage && <div className='font-serif py-4  font-bold text-3xl leading-12 text-gray-200'><p>{errorMessage}</p></div>}
+                {result && <div className='font-serif py-4 font-bold text-3xl leading-12 text-gray-200'><p>Exchange : {result}</p></div>}
+            </div>
             <div className='pt-8 text-xl font-serif font-bold leading-12 text-gray-200'>
                 <h1>Available Currencies</h1>
             </div>
