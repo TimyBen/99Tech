@@ -12,7 +12,7 @@ const InputField = ({ value, onChange }) => {
   console.log(inputValue);
 
   return (
-    <input type="text" value={inputValue} onChange={handleInputChange} />
+    <input className='h-8 px-2 rounded-md' type="text" value={inputValue} onChange={handleInputChange} />
   );
 }
 
